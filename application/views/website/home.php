@@ -494,8 +494,8 @@ Feature Projects Area
     </div>
 </section>
 
-<!--==============================
-Blog Area  
+<!--============================== 
+Blog Section  
 ==============================-->
 <section class="overflow-hidden space bg-theme" id="blog-sec">
     <div class="container">
