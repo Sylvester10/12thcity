@@ -1,0 +1,9 @@
+{
+	"devDependencies": {
+		"tailwindcss": "^3.4.14"
+	},
+	"scripts": {
+		"build:css": "npx tailwindcss -i ./assets/general/css/tw-input.css -o ./assets/general/css/tw-output.css",
+		"watch:css": "npx tailwindcss -i ./assets/general/css/tw-input.css -o ./assets/general/css/tw-output.css --watch"
+	}
+}

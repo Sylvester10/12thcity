@@ -1,0 +1,11 @@
+User-agent: *
+
+Allow: /about
+Allow: /products
+Allow: /projects
+Allow: /affiliate
+Allow: /events
+Allow: /staff
+Allow: /contact
+
+Sitemap: https://12thcityrealestate.ng/sitemap.xml

@@ -1,0 +1,134 @@
+.box-number:hover {
+  color: #eed26e !important;
+}
+
+.swipper img {
+  width: 100% !important;
+  height: 700px !important;
+  object-fit: cover !important;
+}
+
+.portfolio-image img {
+  height: 400px !important;
+  object-fit: cover !important;
+}
+
+.property-cards img {
+  height: 450px !important;
+  object-fit: cover !important;
+}
+
+.property-card-wrap10 .property-card8 {
+  height: 400px;
+}
+
+.property-card-meta {
+    display: block !important;
+    word-wrap: break-word !important;
+    padding: 24px 27px;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.border-top {
+      border-top: 1px solid rgba(28, 45, 55, 0.7) !important;
+}
+
+
+.mobile-logo img {
+  width: 150px;
+}
+
+.newsletter-wraps .newsletter-title {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--theme-color);
+  max-width: 480px;
+  line-height: 1.21;
+  margin-bottom: -0.25em;
+  margin-top: -0.25em;
+  /* Medium devices */
+  /* Small devices */
+}
+
+@media (max-width: 991px) {
+  .newsletter-wraps .newsletter-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .newsletter-wraps .newsletter-title {
+    font-size: 24px;
+  }
+}
+
+.newsletter-wraps .newsletter-form {
+  /* display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; */
+  gap: 16px;
+}
+
+.newsletter-wraps .newsletter-form .form-group input {
+    background: transparent;
+    border: 1px solid var(--body-color);
+    border-radius: 50px;
+    height: 64px;
+    /* color: var(--white-color); */
+}
+.newsletter-wraps .newsletter-form .form-group select {
+    background: transparent;
+    border: 1px solid var(--body-color);
+    border-radius: 50px;
+    height: 64px;
+    /* color: var(--white-color); */
+}
+
+.newsletter-wraps .newsletter-form .th-btn {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 56px;
+}
+
+.newsletter-wraps .newsletter-form .th-btn img {
+  width: 16px;
+}
+
+@media (max-width: 991px) {
+  .newsletter-wraps {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .newsletter-wraps .newsletter-form {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .newsletter-wraps .newsletter-form .form-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .swiper-projectt .swiper .swiper-wrapper img {
+    height: auto !important;
+    object-fit: cover !important;
+  }
+  .property-card-wrap10 .property-card8 {
+    height: auto;
+  }
+  .property-cards img {
+    height: auto;
+  }
+}
