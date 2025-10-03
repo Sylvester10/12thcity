@@ -2,7 +2,8 @@
 
 ```markdown
 
-A real estate listing and property management platform for showcasing properties, handling inquiries, and managing clients.  
+A real estate listing and property management platform for showcasing properties,
+handling inquiries, and managing clients.  
 
 *******************
 Features 🚀
