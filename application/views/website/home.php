@@ -224,6 +224,74 @@ Service Area
 </section>
 
 <!--==============================
+Core Values Area  
+==============================-->
+<section class="why-sec2 space overflow-hidden">
+    <div class="container">
+        <div class="row gx-80 gy-60">
+            <div class="col-xl-4 col-lg-8">
+                <div class="why-img-box2">
+                    <div class="img1">
+                        <img src="<?php echo base_url(); ?>assets/website/img/normal/why_2_1.png" alt="12thcity" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <div class="title-area mb-40">
+                    <h2 class="sec-title text-theme">
+                        Core Values
+                    </h2>
+                    <p class="sec-text text-theme">
+                        At the core of our company is a set of values that guide our every decision and interaction. We call them REAL, because they define how we do business and how we engage with our clients, partners, and investors.
+                    </p>
+                    <p class="sec-text text-theme">
+                        In today’s evolving real estate market, success is not just about buying and selling properties—it’s about building credibility, fostering trust, and creating wealth that lasts for generations. By staying true to our REAL values, we ensure that every investment and relationship contributes to a sustainable and prosperous future.
+                    </p>
+                </div>
+                <ul class="why-feature-list">
+                    <li class="why-feature-list-wrap">
+                        <div class="number">01</div>
+                        <div class="why-feature-list-details">
+                            <h4 class="feature-title">Relationships</h4>
+                            <p class="feature-text">
+                                Trust is our foundation. We build and nurture long-term partnerships, ensuring that every investment creates lasting value for our clients, investors, and stakeholders.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="why-feature-list-wrap">
+                        <div class="number">02</div>
+                        <div class="why-feature-list-details">
+                            <h4 class="feature-title">Accountability</h4>
+                            <p class="feature-text">
+                                Integrity is the bedrock of our operations. We uphold transparency, honesty, and professionalism in every transaction, ensuring that we always deliver on our promises.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="why-feature-list-wrap">
+                        <div class="number">03</div>
+                        <div class="why-feature-list-details">
+                            <h4 class="feature-title">Excellence</h4>
+                            <p class="feature-text">
+                                We are committed to setting new industry standards. From investment opportunities to customer service, we strive for the highest level of quality and innovation in everything we do.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="why-feature-list-wrap">
+                        <div class="number">04</div>
+                        <div class="why-feature-list-details">
+                            <h4 class="feature-title">Loyalty</h4>
+                            <p class="feature-text">
+                                Our clients and partners are at the heart of our mission. We stand by those who trust us, providing them with consistent value and long-term financial growth.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==============================
 Inquiry Area  
 ==============================-->
 <section class="space-bottom footer-wrapper footer-layout5 footer-default bg-black4" data-bg-src="<?php echo base_url('assets/website/img/bg/footer-bg-6-1.png'); ?>">
@@ -355,95 +423,29 @@ Inquiry Area
 </section>
 
 <!--==============================
-Core Values Area  
-==============================-->
-<section class="why-sec2 space overflow-hidden">
-    <div class="container">
-        <div class="row gx-80 gy-60">
-            <div class="col-xl-4 col-lg-8">
-                <div class="why-img-box2">
-                    <div class="img1">
-                        <img src="<?php echo base_url(); ?>assets/website/img/normal/why_2_1.png" alt="12thcity" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-8">
-                <div class="title-area mb-40">
-                    <h2 class="sec-title text-theme">
-                        Core Values
-                    </h2>
-                    <p class="sec-text text-theme">
-                        At the core of our company is a set of values that guide our every decision and interaction. We call them REAL, because they define how we do business and how we engage with our clients, partners, and investors.
-                    </p>
-                    <p class="sec-text text-theme">
-                        In today’s evolving real estate market, success is not just about buying and selling properties—it’s about building credibility, fostering trust, and creating wealth that lasts for generations. By staying true to our REAL values, we ensure that every investment and relationship contributes to a sustainable and prosperous future.
-                    </p>
-                </div>
-                <ul class="why-feature-list">
-                    <li class="why-feature-list-wrap">
-                        <div class="number">01</div>
-                        <div class="why-feature-list-details">
-                            <h4 class="feature-title">Relationships</h4>
-                            <p class="feature-text">
-                                Trust is our foundation. We build and nurture long-term partnerships, ensuring that every investment creates lasting value for our clients, investors, and stakeholders.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="why-feature-list-wrap">
-                        <div class="number">02</div>
-                        <div class="why-feature-list-details">
-                            <h4 class="feature-title">Accountability</h4>
-                            <p class="feature-text">
-                                Integrity is the bedrock of our operations. We uphold transparency, honesty, and professionalism in every transaction, ensuring that we always deliver on our promises.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="why-feature-list-wrap">
-                        <div class="number">03</div>
-                        <div class="why-feature-list-details">
-                            <h4 class="feature-title">Excellence</h4>
-                            <p class="feature-text">
-                                We are committed to setting new industry standards. From investment opportunities to customer service, we strive for the highest level of quality and innovation in everything we do.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="why-feature-list-wrap">
-                        <div class="number">04</div>
-                        <div class="why-feature-list-details">
-                            <h4 class="feature-title">Loyalty</h4>
-                            <p class="feature-text">
-                                Our clients and partners are at the heart of our mission. We stand by those who trust us, providing them with consistent value and long-term financial growth.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--==============================
 Feature Projects Area  
 ==============================-->
-<section class="overflow-hidden space bg-theme background-image">
+<section class="overflow-hidden space">
     <div class="container">
         <div class="row justify-content-lg-between align-items-center">
             <div class="col-xxl-6 col-xl-7 col-lg-6">
                 <div class="title-area">
-                    <span class="shadow-title">Investments</span>
-                    <h2 class="sec-title text-theme text-white">Featured Investments</h2>
+                    <span class="shadow-title-black">Projects</span>
+                    <h2 class="sec-title text-theme">Featured Projects</h2>
                 </div>
             </div>
-            <div class="col-lg-auto">
+            <div class="col-auto">
                 <div class="sec-btn">
-                    <a href="<?php echo base_url('projects'); ?>" class="th-btn style-border3 th-btn-icon">More</a>
+                    <a href="<?php echo base_url('projects'); ?>" class="th-btn style-border5 th-btn-icon">More Projects</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="slider-area project-slider5 slider-drag-wrap">
-            <div class="swiper th-slider" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"},"1500":{"slidesPerView":"3"}},"grabCursor":"true","slideToClickedSlide":"true", "paginationType":"progressbar"}'>
+            <div
+                class="swiper th-slider"
+                data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"},"1500":{"slidesPerView":"3"}},"grabCursor":"true","slideToClickedSlide":"true", "paginationType":"progressbar"}'>
                 <div class="swiper-wrapper">
 
                     <?php
@@ -453,12 +455,12 @@ Feature Projects Area
 
                         <div class="swiper-slide">
                             <div class="portfolio-card style5">
-                                <div class="portfolio-img portfolio-image">
+                                <div class="portfolio-img">
                                     <img src="<?php echo base_url('assets/uploads/projects/' . $y->featured_image); ?>" alt="<?php echo htmlspecialchars($y->title); ?>" />
                                 </div>
                                 <div class="portfolio-content">
                                     <div class="box-content">
-                                        <h3 class="portfolio-title">
+                                        <h3 class="portfolio-title portfolio-title-black">
                                             <a href="<?php echo base_url('project-details/' . $y->slug); ?>"><?php echo htmlspecialchars($y->title); ?></a>
                                         </h3>
                                         <p class="portfolio-location">
