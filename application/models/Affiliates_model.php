@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('Direct access to script not allowed');
 
-/* ===== Documentation ===== 
+/* ===== Documentation =====
 Name: Affiliates_model
 Role: Model
 Description: Controls the DB processes of Affiliates from admin panel
@@ -78,7 +78,7 @@ class Affiliates_model extends MY_Model
 		);
 
 		//Send email to Admin
-		send_email_notification($this, 'onyekaesso10@gmail.com', 'New Affiliate Message', $data, 'affiliate_notification_email');
+		send_email_notification($this, 'info@12thcityrealestate.com', 'New Affiliate Message', $data, 'affiliate_notification_email');
 
 		$this->db->insert('affiliates', $data);
 		return;

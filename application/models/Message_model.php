@@ -37,7 +37,7 @@ class Message_model extends My_Model
 		);
 
 		//Send email to Admin
-		send_email_notification($this, 'onyekaesso10@gmail.com', 'New Contact Message', $data, 'contact_notification_email');
+		send_email_notification($this, 'info@12thcityrealestate.ng', 'New Contact Message', $data, 'contact_notification_email');
 		return;
 	}
 
@@ -60,7 +60,7 @@ class Message_model extends My_Model
 		);
 
 		//Send email to Admin
-		send_email_notification($this, 'onyekaesso10@gmail.com', 'New Inquiry Message', $data, 'inquiry_notification_email');
+		send_email_notification($this, 'info@12thcityrealestate.ng', 'New Inquiry Message', $data, 'inquiry_notification_email');
 		return;
 	}
 
@@ -76,7 +76,7 @@ class Message_model extends My_Model
 		);
 
 		//Send email to Admin
-		send_email_notification($this, 'onyekaesso10@gmail.com', 'New Ebook Download Message', $data, 'ebook_notification_email');
+		send_email_notification($this, 'info@12thcityrealestate.ng', 'New Ebook Download Message', $data, 'ebook_notification_email');
 		return;
 	}
 
