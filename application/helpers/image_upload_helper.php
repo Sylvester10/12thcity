@@ -16,7 +16,7 @@ function upload_single_image($fieldName, $configOverrides = [])
     $config = [
         'upload_path'      => './assets/uploads/events/',
         'allowed_types'    => 'jpg|jpeg|png',
-        'max_size'         => 5024, // 5MB
+        'max_size'         => 2024, // 2MB
         'file_ext_tolower' => TRUE,
         'encrypt_name'     => TRUE,
     ];
@@ -60,7 +60,7 @@ function upload_multiple_images($fieldName, $configOverrides = [])
     $config = [
         'upload_path'      => './assets/uploads/events/',
         'allowed_types'    => 'jpg|jpeg|png',
-        'max_size'         => 5024, // 5MB
+        'max_size'         => 10024, // 10MB
         'file_ext_tolower' => TRUE,
         'encrypt_name'     => TRUE,
     ];

@@ -67,7 +67,7 @@ Hero Area
 </div>
 
 <!--==============================
-Counter Area  
+Counter Area
 ==============================-->
 <div class="counter-area-1">
     <div class="container">
@@ -95,7 +95,7 @@ Counter Area
 </div>
 
 <!--==============================
-Vision Mission Area  
+Vision Mission Area
 ==============================-->
 <div class="space overflow-hidden shape-mockup-wrap">
     <div class="sec-bg-shape2-1 spin shape-mockup d-xxl-block d-none" style="top: 6%; left: 4%;">
@@ -153,7 +153,7 @@ Vision Mission Area
 </div>
 
 <!--==============================
-Service Area  
+Service Area
 ==============================-->
 <section class="space bg-theme background-image">
     <div class="container">
@@ -224,7 +224,7 @@ Service Area
 </section>
 
 <!--==============================
-Core Values Area  
+Core Values Area
 ==============================-->
 <section class="why-sec2 space overflow-hidden">
     <div class="container">
@@ -292,7 +292,7 @@ Core Values Area
 </section>
 
 <!--==============================
-Inquiry Area  
+Inquiry Area
 ==============================-->
 <section class="space-bottom footer-wrapper footer-layout5 footer-default bg-black4" data-bg-src="<?php echo base_url('assets/website/img/bg/footer-bg-6-1.png'); ?>">
     <div class="container">
@@ -423,7 +423,7 @@ Inquiry Area
 </section>
 
 <!--==============================
-Feature Projects Area  
+Feature Projects Area
 ==============================-->
 <section class="overflow-hidden space">
     <div class="container">
@@ -464,7 +464,7 @@ Feature Projects Area
                                             <a href="<?php echo base_url('project-details/' . $y->slug); ?>"><?php echo htmlspecialchars($y->title); ?></a>
                                         </h3>
                                         <p class="portfolio-location">
-                                            <i class="far fa-map-marker-alt me-2"></i>
+                                            <i class="fa fa-map-marker-alt me-2"></i>
                                             <?php echo htmlspecialchars($y->location); ?>, <?php echo htmlspecialchars($y->state); ?>
                                         </p>
                                     </div>
@@ -496,8 +496,8 @@ Feature Projects Area
     </div>
 </section>
 
-<!--============================== 
-Blog Section  
+<!--==============================
+Blog Section
 ==============================-->
 <section class="overflow-hidden space bg-theme" id="blog-sec">
     <div class="container">
@@ -544,7 +544,7 @@ Blog Section
 </section>
 
 <!--==============================
-CTA Area  
+CTA Area
 ==============================-->
 <section class="download-area-1 space-top overflow-hidden background-image" data-opacity="5" data-overlay="title" style="background-image: url('<?php echo base_url('assets/website/img/1_7.jpg'); ?>');">
     <div class="container">
@@ -565,3 +565,61 @@ CTA Area
         </div>
     </div>
 </section>
+
+
+<!--==============================
+    Popup Modal v1
+============================== -->
+<div class="th-modal modal fade" id="ebookModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="container">
+                <button type="button" class="icon-btn btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-regular fa-xmark"></i></button>
+                <div class="page-single bg-theme">
+                    <div class="page-img mb-30">
+                        <h4 class="mb-3 text-white">Download E-Book</h4>
+                        <p class="mb-4">Please enter your details below to access the material.</p>
+
+                        <?php
+                        $ebook_form_attributes = [
+                            "id" => "ebook_lead_form",
+                            "class" => "ajax-form",
+                            "data-message-container" => "#ebook_status_msg"
+                        ];
+                        echo form_open('home/request_ebook', $ebook_form_attributes);
+                        ?>
+
+                        <input type="hidden" name="ebook_requested" id="ebook_requested" value="">
+
+                        <div class="row">
+                            <div class="form-group col-12 mb-3">
+                                <input type="text" name="fullname" class="form-control" placeholder="Full Name" required />
+                            </div>
+
+                            <div class="form-group col-12 mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required />
+                            </div>
+
+                            <div class="form-group col-12 mb-4">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required />
+                            </div>
+
+                            <div class="col-12">
+                                <button class="th-btn style5 w-100" type="submit" id="submit">
+                                    Get E-book
+                                    Submit
+                                    <span id="paper-plane"><i class="far fa-paper-plane text-title"></i></span>
+                                    <span class="spinner-grow spinner-grow-sm text-light me-2 d-nones" style="color: #f8f9fa" id="search-spinner" role="status" aria-hidden="true"></span>
+                                </button>
+                            </div>
+
+                            <p class="form-messages mb-0 mt-3" id="ebook_status_msg"></p>
+                        </div>
+
+                        <?php echo form_close(); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

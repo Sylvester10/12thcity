@@ -71,6 +71,12 @@
 
 								<li><a href="<?php echo base_url('admin-add-hero'); ?>"><i class="fa fa-card"></i> Update Hero Image</a></li>
 
+								<li><a><i class="fa fa-file"></i> Leads <span class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="<?php echo base_url('admin-leads'); ?>">All Leads</a></li>
+									</ul>
+								</li>
+
 								<li><a><i class="fa fa-home"></i> Projects <span class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
 										<li><a href="<?php echo base_url('admin-projects'); ?>">All Projects</a></li>

@@ -177,6 +177,23 @@
 <script src="<?php echo base_url(); ?>assets/general/js/my_functions.js"></script>
 <script src="<?php echo base_url(); ?>assets/website/js/custom.js"></script>
 
+<!-- Download Ebook  -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const ebookParam = urlParams.get('ebook');
+
+        if (ebookParam) {
+            document.getElementById('ebook_requested').value = ebookParam;
+
+            var ebookModalElement = document.getElementById('ebookModal');
+            if (ebookModalElement) {
+                var myModal = new bootstrap.Modal(ebookModalElement);
+                myModal.show();
+            }
+        }
+    });
+</script>
 
 <!-- display image on click for gallery page -->
 <script>

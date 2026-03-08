@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('Direct access to script not allowed');
 
-/* ===== Documentation ===== 
+/* ===== Documentation =====
 Name: Message_model
 Role: Model
 Description: Controls the DB processes of Message from admin panel
@@ -61,6 +61,22 @@ class Message_model extends My_Model
 
 		//Send email to Admin
 		send_email_notification($this, 'onyekaesso10@gmail.com', 'New Inquiry Message', $data, 'inquiry_notification_email');
+		return;
+	}
+
+	public function send_ebook_request_to_email()
+	{
+		$post = $this->input->post(NULL, TRUE); // Keep XSS filtering
+
+		$data = array(
+			'fullname'  => $post['fullname'],
+			'email'      => $post['email'],
+			'phone'   => $post['phone'],
+			'ebook_requested'   => $post['ebook_requested'],
+		);
+
+		//Send email to Admin
+		send_email_notification($this, 'onyekaesso10@gmail.com', 'New Ebook Download Message', $data, 'ebook_notification_email');
 		return;
 	}
 

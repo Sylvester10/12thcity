@@ -2,7 +2,7 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 
-/* ===== Documentation ===== 
+/* ===== Documentation =====
 Name: Home
 Role: Controller
 Description: Controls access to messages, property, events, affiliates, locations, projects and testimonial pages and functions in admin panel
@@ -25,6 +25,7 @@ class Home extends MY_Controller
 		$this->load->model('staff_model');
 		$this->load->model('projects_model');
 		$this->load->model('awards_model');
+		$this->load->model('leads_model');
 		$this->load->model('common_model');
 	}
 
@@ -68,6 +69,60 @@ class Home extends MY_Controller
 
 		$this->message_model->send_inquiry_to_email();
 		$res = ['status' => true, 'msg' => 'Inquiry sent! We will be in touch.'];
+		echo json_encode($res);
+	}
+
+
+	public function request_ebook()
+	{
+		// Validation rules (Added ebook_requested)
+		$rules = [
+			['field' => 'fullname', 'label' => 'Name', 'rules' => 'trim|required'],
+			['field' => 'email', 'label' => 'Email', 'rules' => 'trim|required|valid_email'],
+			['field' => 'phone', 'label' => 'Mobile Number', 'rules' => 'trim|required|is_natural', 'errors' => ['is_natural' => 'Please enter numbers only for Mobile Number']],
+			['field' => 'ebook_requested', 'label' => 'Requested Ebook', 'rules' => 'trim|required']
+		];
+		$this->form_validation->set_rules($rules);
+
+		if ($this->form_validation->run() == FALSE) {
+			$res = ['status' => false, 'msg' => validation_errors()];
+			echo json_encode($res);
+			return;
+		}
+
+		// Map the URL parameter to the exact PDF filename
+		$ebook_param = $this->input->post('ebook_requested', TRUE);
+		$file_name = '';
+
+		switch ($ebook_param) {
+			case 'fake_developers':
+				$file_name = 'Ebook2_Fake_Developers_Complete.pdf';
+				break;
+			case 'recession_proof':
+				$file_name = 'Ebook3_Recession_Proof_Wealth.pdf';
+				break;
+			case 'womans_guide':
+				$file_name = 'Ebook6_Womans_Guide_Real_Estate_Wealth.pdf';
+				break;
+			default:
+				$res = ['status' => false, 'msg' => 'Invalid ebook requested.'];
+				echo json_encode($res);
+				return;
+		}
+
+		// Generate the full download URL
+		$download_url = base_url('assets/uploads/brochures/' . $file_name);
+
+		// Call the model to save the lead
+		$this->leads_model->add_lead_to_db();
+
+		// Return success message AND the download_url so JS can trigger the download
+		$this->message_model->send_ebook_request_to_email();
+		$res = [
+			'status' => true,
+			'msg' => 'Successful. Your Ebook is downloading...',
+			'download_url' => $download_url
+		];
 		echo json_encode($res);
 	}
 

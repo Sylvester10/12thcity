@@ -99,7 +99,7 @@ switch (ENVIRONMENT) {
 		//development/local server
 		$db_username 	= 'root';
 		$db_password 	= '';
-		$db_database 	= '12thcity';
+		$db_database 	= '12th';
 		$db_debug		= TRUE;
 		break;
 }

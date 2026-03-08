@@ -12,10 +12,10 @@ function getMailer()
         $mail = new PHPMailer(true);
 
         // Server settings
-        $mail->isSMTP();                                            
+        $mail->isSMTP();
         $mail->Mailer = "smtp";
-        $mail->Host       = 'smtp.hostinger.com';                  
-        $mail->SMTPAuth   = true;                                   
+        $mail->Host       = 'smtp.hostinger.com';
+        $mail->SMTPAuth   = true;
         $mail->Username   = 'admin@12thcityrealestate.ng';
         $mail->Password   = 'Rit*Yt6|';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;

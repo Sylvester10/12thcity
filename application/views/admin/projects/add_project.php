@@ -244,7 +244,7 @@ echo form_open_multipart('admin_projects/add_project_ajax', 'id="submit"'); ?>
         <div class="form-group">
             <label class="form-control-label">Upload Feature Image </label>
             <br />
-            <small>Only JPG and PNG files allowed (max 4MB).</small>
+            <small>Only JPG and PNG files allowed (max 2MB).</small>
             <input type="file" name="featured_image" id="the_image" class="form-control" accept=".jpeg,.jpg,.png" required />
             <div class="form-error"><?php echo form_error('featured_image'); ?></div>
         </div>
@@ -254,7 +254,7 @@ echo form_open_multipart('admin_projects/add_project_ajax', 'id="submit"'); ?>
 
         <div class="form-group" id="other_images">
             <label class="form-control-label">Upload Other Project Images </label><br />
-            <small>Only JPG and PNG files allowed (max 5MB).</small>
+            <small>Only JPG and PNG files allowed (max 10MB).</small>
             <input type="file" name="other_images[]" multiple class="form-control" accept=".jpeg,.jpg,.png" />
             <div class="form-error"><?php echo $error; ?></div>
         </div>

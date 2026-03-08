@@ -86,6 +86,7 @@ $route['admin-update-event/(:any)'] = 'admin_events/update_event/$1';
 $route['admin-projects'] = 'admin_projects';
 $route['admin-add-project'] = 'admin_projects/add_project';
 $route['admin-update-project/(:any)'] = 'admin_projects/update_project/$1';
+$route['admin-leads'] = 'admin_leads';
 $route['admin-staff'] = 'admin_staff';
 $route['admin-add-staff'] = 'admin_staff/add_staff';
 $route['admin-update-staff/(:any)'] = 'admin_staff/update_staff/$1';

@@ -278,8 +278,24 @@ $(document).on("submit", ".ajax-form", function (e) {
         container: messageContainer,
       });
 
-      if (res.status && resetOnSuccess) {
-        $form[0].reset();
+      if (res.status) {
+        // Handle form reset
+        if (resetOnSuccess) {
+          $form[0].reset();
+        }
+
+        // Handle automatic file downloads if a URL is provided by the backend
+        if (res.download_url) {
+          const a = document.createElement('a');
+          a.href = res.download_url;
+
+          // Extract filename from URL to suggest to the browser
+          a.download = res.download_url.split('/').pop();
+
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }
       }
     },
     error: function () {
