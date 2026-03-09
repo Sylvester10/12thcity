@@ -21,7 +21,7 @@
     <div id="container" style="width: 100%; height: auto; padding: 10px 10px 10px 10px; background-color:rgb(240, 240, 240); position: relative; border-radius:5px; ">
 
         <!--Logo-->
-        <div id="icon_cont" style="position: relative; width: width: 92%; margin-top: 5px; margin-bottom: 15px;">
+        <div id="icon_cont" style="position: relative; width: 92%; margin-top: 5px; margin-bottom: 15px;">
             <div id="icon" style="position: relative; width: 100px; margin:auto;">
                 <img src="<?php echo production_url('assets/general/logo/12th_city_logo.png'); ?>" style="width:100px;" width="100">
             </div>
