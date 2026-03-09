@@ -14,7 +14,7 @@ Hero Area
                                 <div class="hero-style1">
                                     <h1 class="hero-title text-white">
                                         <span class="title1" data-ani="slideindown" data-ani-delay="0.3s">
-                                            Top Notch </span>
+                                            Top Notchs </span>
                                         <span class="title2" data-ani="slideindown" data-ani-delay="0.4s">
                                             Living Space </span>
                                     </h1>
