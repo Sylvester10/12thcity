@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 
 $live_db_username = 'u543551821_12thcity';
-$live_db_password = 't2Z+THh#3/';
+$live_db_password = '?Bp|N;9j';
 
 switch (ENVIRONMENT) {
 
