@@ -177,7 +177,6 @@
 <script src="<?php echo base_url(); ?>assets/general/js/my_functions.js"></script>
 <script src="<?php echo base_url(); ?>assets/website/js/custom.js"></script>
 
-
 <!-- display image on click for gallery page -->
 <script>
     $(document).ready(function() {

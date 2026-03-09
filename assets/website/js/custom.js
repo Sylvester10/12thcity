@@ -1,26 +1,26 @@
 jQuery(document).ready(function ($) {
-  ("use strict");
+  ('use strict');
 
   /*=========== Disable Button ===========*/
   function disableSubmitBtn() {
-    var submitButton = $("#submits");
-    $("#paper-plane").addClass("d-none"); // Updated to match the paper-plane ID in the HTML
-    submitButton.addClass("disabled");
-    submitButton.attr("disabled", true); // Disables the button
+    var submitButton = $('#submits');
+    $('#paper-plane').addClass('d-none'); // Updated to match the paper-plane ID in the HTML
+    submitButton.addClass('disabled');
+    submitButton.attr('disabled', true); // Disables the button
   }
 
   /*=========== Enable Button ===========*/
   function enableSubmitBtn() {
-    var submitButton = $("#submits");
-    $("#paper-plane").removeClass("d-none"); // Hide the paper-plane after response
-    submitButton.removeClass("disabled");
-    submitButton.attr("disabled", false); // Enables the button
+    var submitButton = $('#submits');
+    $('#paper-plane').removeClass('d-none'); // Hide the paper-plane after response
+    submitButton.removeClass('disabled');
+    submitButton.attr('disabled', false); // Enables the button
   }
 
   /*============= Countdown ==============*/
-  $("[data-countdown]").each(function () {
+  $('[data-countdown]').each(function () {
     var $this = $(this),
-      finalDate = $(this).data("countdown");
+      finalDate = $(this).data('countdown');
     $this.countdown(finalDate, function (event) {
       $this.html(
         event.strftime(
@@ -31,54 +31,54 @@ jQuery(document).ready(function ($) {
   });
 
   // Newsletter
-  $("#newsletter_form").submit(function (e) {
+  $('#newsletter_form').submit(function (e) {
     e.preventDefault();
 
     // Cache jQuery objects for efficiency
-    var $submitBtn = $("#submit_newsletter");
-    var $btnText = $submitBtn.find(".btn-text");
-    var $spinner = $submitBtn.find("#search-spinner");
-    var $message = $submitBtn.find(".btn-message");
+    var $submitBtn = $('#submit_newsletter');
+    var $btnText = $submitBtn.find('.btn-text');
+    var $spinner = $submitBtn.find('#search-spinner');
+    var $message = $submitBtn.find('.btn-message');
     var $form = $(this);
 
     // Hide original text and show spinner
-    $btnText.addClass("d-none");
-    $spinner.removeClass("d-none");
-    $message.addClass("d-none").html(""); // Reset message area
-    $submitBtn.prop("disabled", true); // Disable button during request
+    $btnText.addClass('d-none');
+    $spinner.removeClass('d-none');
+    $message.addClass('d-none').html(''); // Reset message area
+    $submitBtn.prop('disabled', true); // Disable button during request
 
     var form_data = new FormData(this);
 
     $.ajax({
-      url: base_url + "home/newsletter_ajax",
-      type: "POST",
+      url: base_url + 'home/newsletter_ajax',
+      type: 'POST',
       data: form_data,
-      dataType: "json",
+      dataType: 'json',
       cache: false,
       contentType: false,
       processData: false,
       success: function (res) {
         // Hide spinner now that we have a response
-        $spinner.addClass("d-none");
+        $spinner.addClass('d-none');
 
         if (res.status) {
           // Success: Show green success message
           // Changed .text() to .html() to render the <p> tag
-          $message.html(res.msg).css("color", "#28a745").removeClass("d-none");
+          $message.html(res.msg).css('color', '#28a745').removeClass('d-none');
         } else {
           // Error: Show red error message
           // Changed .text() to .html() to render the <p> tag
-          $message.html(res.msg).css("color", "#FFF").removeClass("d-none");
+          $message.html(res.msg).css('color', '#FFF').removeClass('d-none');
         }
 
         // Set a timer to revert the button back to its original state
         setTimeout(function () {
           // Hide the message
-          $message.addClass("d-none").html("");
+          $message.addClass('d-none').html('');
           // Show the original "Subscribe" text and icon
-          $btnText.removeClass("d-none");
+          $btnText.removeClass('d-none');
           // Re-enable the button
-          $submitBtn.prop("disabled", false);
+          $submitBtn.prop('disabled', false);
 
           // If the submission was successful, reset the form
           if (res.status) {
@@ -88,52 +88,52 @@ jQuery(document).ready(function ($) {
       },
       error: function () {
         // Handle AJAX errors (e.g., server down)
-        $spinner.addClass("d-none");
+        $spinner.addClass('d-none');
         $message
-          .html("<p>Unable to complete.</p>")
-          .css("color", "#FFF")
-          .removeClass("d-none");
+          .html('<p>Unable to complete.</p>')
+          .css('color', '#FFF')
+          .removeClass('d-none');
 
         setTimeout(function () {
-          $message.addClass("d-none").html("");
-          $btnText.removeClass("d-none");
-          $submitBtn.prop("disabled", false);
+          $message.addClass('d-none').html('');
+          $btnText.removeClass('d-none');
+          $submitBtn.prop('disabled', false);
         }, 4000);
       },
     });
   });
 
-  $("#admin_login_form").submit(function (e) {
+  $('#admin_login_form').submit(function (e) {
     e.preventDefault();
     var form_data = $(this).serialize();
-    var redirect_url = $("#requested_page").val();
+    var redirect_url = $('#requested_page').val();
     $.ajax({
-      url: base_url + "login/login_ajax",
-      type: "POST",
+      url: base_url + 'login/login_ajax',
+      type: 'POST',
       data: form_data,
-      dataType: "json",
+      dataType: 'json',
       success: function (res) {
         if (res.status) {
-          $("#status_msg")
+          $('#status_msg')
             .html(
               '<div class="alert alert-success text-center" style="color: #000">' +
                 res.msg +
-                "</div>"
+                '</div>'
             )
-            .fadeIn("fast");
+            .fadeIn('fast');
           setTimeout(function () {
-            $(location).attr("href", redirect_url);
+            $(location).attr('href', redirect_url);
           }, 3000);
         } else {
-          $("#status_msg")
+          $('#status_msg')
             .html(
               '<div class="alert alert-danger text-center" style="color: #000">' +
                 res.msg +
-                "</div>"
+                '</div>'
             )
-            .fadeIn("fast")
+            .fadeIn('fast')
             .delay(10000)
-            .fadeOut("slow");
+            .fadeOut('slow');
         }
       },
     });
@@ -144,12 +144,12 @@ jQuery(document).ready(function ($) {
 
     //getting variables
 
-    var placeHolder = $(this).attr("placeholder");
-    var allSelected = $(this).attr("all-selected");
+    var placeHolder = $(this).attr('placeholder');
+    var allSelected = $(this).attr('all-selected');
     $(this).multiselect({
       includeSelectAllOption: true,
       nonSelectedText: placeHolder,
-      nSelectedText: " - Too many options selected!",
+      nSelectedText: ' - Too many options selected!',
       allSelectedText: allSelected,
       numberDisplayed: 10,
     });
@@ -164,18 +164,27 @@ jQuery(document).ready(function ($) {
   //   });
   // });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const ebookParam = urlParams.get('ebook');
+  // 1. Handle Auto-Popup from Facebook Ad URLs
+  const urlParams = new URLSearchParams(window.location.search);
+  const ebookParam = urlParams.get('ebook');
 
-    if (ebookParam) {
-      document.getElementById('ebook_requested').value = ebookParam;
+  if (ebookParam) {
+    $('#ebook_requested').val(ebookParam);
 
-      var ebookModalElement = document.getElementById('ebookModal');
-      if (ebookModalElement) {
-        var myModal = new bootstrap.Modal(ebookModalElement);
-        myModal.show();
-      }
+    var ebookModalElement = document.getElementById('ebookModal');
+    if (ebookModalElement) {
+      var myModal = new bootstrap.Modal(ebookModalElement);
+      myModal.show();
+    }
+  }
+
+  // 2. Handle Manual Button Clicks on the page
+  $('#ebookModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // The button that triggered the modal
+    var ebookId = button.data('ebook-id'); // Extract the ID
+
+    if (ebookId) {
+      $('#ebook_requested').val(ebookId);
     }
   });
 });
