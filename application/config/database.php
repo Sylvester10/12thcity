@@ -74,7 +74,7 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 
-$live_db_username = 'u543551821_sharemybag';
+$live_db_username = 'u543551821_12thcity';
 $live_db_password = 't2Z+THh#3/';
 
 switch (ENVIRONMENT) {
@@ -83,7 +83,7 @@ switch (ENVIRONMENT) {
 		//live production server
 		$db_username 	= $live_db_username;
 		$db_password 	= $live_db_password;
-		$db_database 	= 'u543551821_sharemybag';
+		$db_database 	= 'u543551821_12thcity';
 		$db_debug		= FALSE;
 		break;
 

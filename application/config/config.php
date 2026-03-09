@@ -33,7 +33,7 @@ switch (ENVIRONMENT) {
 
     case 'production':
         //live production server
-        $config['base_url'] = 'https://sharemybag.co.uk';
+        $config['base_url'] = 'https://12thcityrealestate.ng';
         break;
 
     case 'testing':
