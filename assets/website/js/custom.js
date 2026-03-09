@@ -163,4 +163,19 @@ jQuery(document).ready(function ($) {
   //     todayHighlight: true,
   //   });
   // });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const ebookParam = urlParams.get('ebook');
+
+    if (ebookParam) {
+      document.getElementById('ebook_requested').value = ebookParam;
+
+      var ebookModalElement = document.getElementById('ebookModal');
+      if (ebookModalElement) {
+        var myModal = new bootstrap.Modal(ebookModalElement);
+        myModal.show();
+      }
+    }
+  });
 });
