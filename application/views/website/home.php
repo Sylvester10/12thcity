@@ -608,7 +608,7 @@ CTA Area
                                 <button class="th-btn style5 w-100" type="submit" id="submit">
                                     Get E-book
                                     <span id="paper-plane"><i class="far fa-paper-plane text-title"></i></span>
-                                    <span class="spinner-grow spinner-grow-sm text-light me-2 d-nones" style="color: #f8f9fa" id="search-spinner" role="status" aria-hidden="true"></span>
+                                    <span class="spinner-grow spinner-grow-sm text-light me-2 d-none" style="color: #f8f9fa" id="search-spinner" role="status" aria-hidden="true"></span>
                                 </button>
                             </div>
 
