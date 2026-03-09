@@ -179,7 +179,7 @@
 
 <!-- Download Ebook  -->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    $(document).addEventListener("DOMContentLoaded", function() {
         const urlParams = new URLSearchParams(window.location.search);
         const ebookParam = urlParams.get('ebook');
 
