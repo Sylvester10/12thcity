@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-/* ===== Documentation ===== 
+/* ===== Documentation =====
 Name: Constants::General
 Role: Include
 Description: Holds all the constants used by the app. Required in the construct of the core controller, MY_Controller, which makes it global to the entire application.
@@ -12,8 +12,8 @@ Date Created: 4th May, 2023
 $business_name = '12thCity Real Estate Developers';
 $business = 'Real Estate Developers';
 $business_initials = '12thCity';
-$business_phone_number = '+234 803-474-2430';
-$business_phone_number2 = '+234 916-476-8748';
+$business_phone_number = '+234 916-476-8748';
+$business_phone_number2 = '';
 $business_facebook = 'https://www.facebook.com/people/12th-City-Real-Estate/100088929480811/?mibextid=LQQJ4d';
 $business_instagram = 'https://www.instagram.com/12th_city_real_estate';
 $business_youtube = 'https://www.youtube.com/@12thCity';
