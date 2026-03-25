@@ -48,15 +48,7 @@ About Area
                         The company aims to be the most trusted and innovative real estate partner in Nigeria and Africa delivery exceptional value through quality properties and innovative service. This will be done through the delivery of tailored real estate solutions that enhance the lives of individuals, families and investors.
                     </p>
                 </div>
-                <!-- <div class="about-experience-wrap">
-                    <div class="box-number background-image" style="background-image: url('<?php echo base_url('assets/website/img/lugbe.jpg'); ?>');">
-                        28
-                    </div>
-                    <div class="box-content">
-                        <span class="box-text">Years</span>
-                        <span class="border-text">Experience</span>
-                    </div>
-                </div> -->
+               
             </div>
         </div>
     </div>
