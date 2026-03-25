@@ -74,7 +74,7 @@
                                     </div>
                                     <div class="details">
                                         <p><a href="tel:<?php echo business_phone_number; ?>" class="info-box_link"><?php echo business_phone_number; ?></a></p>
-                                        <p><a href="tel:<?php echo business_phone_number2; ?>" class="info-box_link"><?php echo business_phone_number2; ?></a></p>
+                                        <!-- <p><a href="tel:<?php echo business_phone_number2; ?>" class="info-box_link"><?php echo business_phone_number2; ?></a></p> -->
                                     </div>
                                 </div>
                                 <div class="info-box_text">

@@ -14,7 +14,7 @@ Breadcrumb
 </div>
 
 <!--==============================
-Contact Area   
+Contact Area
 ==============================-->
 <div class="space">
     <div class="container">
@@ -42,9 +42,9 @@ Contact Area
                         <p class="about-contact-details-text">
                             <a href="tel:01234567890"><?= business_phone_number ?></a>
                         </p>
-                        <p class="about-contact-details-text">
+                        <!-- <p class="about-contact-details-text">
                             <a href="tel:01234567890"><?= business_phone_number2 ?></a>
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
