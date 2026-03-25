@@ -26,7 +26,7 @@
     3.8. Text Color
     3.9. Overlay
     3.10. Animation
-    
+
 04. Template Style
     4.1. Widget
     4.2. Header
@@ -36,7 +36,7 @@
     4.6. Blog
     4.7. Comments
     4.8. Hero Area
-    4.9. Error    
+    4.9. Error
     4.00. Popup Search
     4.00. Popup Side Menu
     4.00. Wocommerce
@@ -9722,6 +9722,7 @@ ol.wp-block-rss {
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 .th-widget-contact .info-box_text .icon {
@@ -24211,7 +24212,7 @@ span.select2-selection.select2-selection--single:focus {
   width: 510px;
   height: 340px;
   object-fit: cover;
-  
+
 }
 
 @media (max-width: 1199px) {
@@ -34187,7 +34188,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /* ---------------------------------- */
-/* Home 12 
+/* Home 12
 /* ---------------------------------- */
 /* hero area 12 ---------------------------------- */
 .hero-12 {
@@ -35146,7 +35147,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /* ---------------------------------- */
-/* Home 13 
+/* Home 13
 /* ---------------------------------- */
 /* hero area 13 ---------------------------------- */
 .hero-13 .property-search-form {
@@ -36660,7 +36661,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /* ---------------------------------- */
-/* Home 14 
+/* Home 14
 /* ---------------------------------- */
 .hero-14 {
   position: relative;
@@ -38321,7 +38322,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /* ---------------------------------- */
-/* Home 15 
+/* Home 15
 /* ---------------------------------- */
 .hero-15 {
   position: relative;
@@ -39503,7 +39504,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /* ---------------------------------- */
-/* Home 16 
+/* Home 16
 /* ---------------------------------- */
 .hero-16 {
   position: relative;
