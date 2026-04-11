@@ -1,25 +1,38 @@
-## 🔹 **12thCity Real Estate**
+###################
+12thCity Real Estate
+###################
 
-```markdown
+A full-featured real estate listing and property management platform for browsing, searching, and enquiring about properties in Nigeria.
 
-A real estate listing and property management platform for showcasing properties,
-handling inquiries, and managing clients.  
+Live site: 12thcityrealestate.ng
+
+*******************
+What It Does
+*******************
+
+12th City gives property buyers and renters an immersive browsing experience — high-quality images, embedded videos, interactive maps, and floor plans — while giving agents and admins a powerful backend to manage listings, leads, and content.
 
 *******************
 Features 🚀
 *******************
 
-- Property listings with images, pricing, and descriptions  
-- Advanced search & filtering for properties  
-- User authentication with buyer/seller roles  
-- Admin dashboard for property management  
-- Responsive UI with Tailwind CSS 
+- Property listings with image galleries, video walkthroughs, and floor plans
+- Advanced search and filter (location, type, price range, bedrooms)
+- Buyer/seller role authentication
+- Lead capture and enquiry forms with email notification
+- Admin dashboard for listing CRUD, user management, and analytics
+- SEO-optimised property pages with clean URLs
+- Fully responsive across mobile, tablet, and desktop
 
 **************************
 Tech Stack 🛠
 **************************
- 
-- PHP / Laravel  
+
+- PHP / CodeIgniter 3
 - MySQL  
-- Tailwind CSS  
+- Tailwind CSS 
 - JavaScript / jQuery  
+- Embedded video, image galleries, floor plan viewer 
+- Google Maps API (interactive property maps)
+
+
