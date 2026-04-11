@@ -1,6 +1,6 @@
-###################
+*******************
 12thCity Real Estate
-###################
+*******************
 
 A full-featured real estate listing and property management platform for browsing, searching, and enquiring about properties in Nigeria.
 
