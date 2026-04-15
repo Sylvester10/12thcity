@@ -57,7 +57,7 @@ echo form_open_multipart('admin_projects/update_project_ajax/' . $y->id, 'id="su
 
                 // Grouped locations
                 $locations = [
-                    "Abuja" => ["Apo", "Bwari", "Guzape", "Idu", "Lugbe", "Mbora", "Karsana", "Kabusa", "Kuje"],
+                    "Abuja" => ["Apo", "Bwari", "Guzape", "Idu", "Lugbe", "Mbora", "Kabusa", "Karsana", "Kuje"],
                     "Port Harcourt" => [
                         "New GRA",
                         "Old GRA",
