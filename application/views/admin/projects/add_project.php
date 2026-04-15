@@ -66,6 +66,8 @@ echo form_open_multipart('admin_projects/add_project_ajax', 'id="submit"'); ?>
                     <option value="Idu">Idu</option>
                     <option value="Lugbe">Lugbe</option>
                     <option value="Mbora">Mbora</option>
+                    <option value="Karsana">Karsana</option>
+                    <option value="Kabusa">Kabusa</option>
                     <option value="Kuje">Kuje</option>
                 </optgroup>
 
