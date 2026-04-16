@@ -956,7 +956,9 @@ function staff_designations()
 		'Head of Corporate Marketing',
 		'Head of Media',
 		'Human Resource Manager',
+		'Human Resource Officer',
 		'Procurement & Logistics Manager',
+		'Procurement & Logistics Officer',
 	);
 	return $staff_designations;
 }
@@ -1392,7 +1394,7 @@ function time_ago($time)
 	$time_diff = mysql_time_difference;
 	$time = strtotime("+$time_diff hours", strtotime($time));
 	$now = time(); //current time
-	$units = 1; //units to show... eg. 9 hours ago, 3 weeks ago. 
+	$units = 1; //units to show... eg. 9 hours ago, 3 weeks ago.
 	return strtolower(timespan($time, $now, $units)) . ' ago';
 }
 
@@ -1407,7 +1409,7 @@ function get_last_login_ago($last_login)
 	$last_login = strtotime($last_login);
 	//$last_login = strtotime("+$time_diff hours", strtotime($last_login));
 	$now = time(); //current time
-	$units = 1; //units to show... eg. 9 hours ago, 3 weeks ago. 
+	$units = 1; //units to show... eg. 9 hours ago, 3 weeks ago.
 	if (($now - $last_login) <= login_refresh_time) {
 		return '<span class="text-success text-bold">Online<sup><i class="fa fa-dot-circle-o fa-pulse"></i></sup></span>';
 	} else {
@@ -1418,7 +1420,7 @@ function get_last_login_ago($last_login)
 
 function get_ordinal_number($number)
 {
-	//NOTE: There is a CI4 helper function for this purpose using the inflector helper  
+	//NOTE: There is a CI4 helper function for this purpose using the inflector helper
 	$ends = array('th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th');
 	if ((($number % 100) >= 11) && (($number % 100) <= 13)) {
 		$ordninal = $number . 'th';
@@ -1431,7 +1433,7 @@ function get_ordinal_number($number)
 
 function get_ordinal_string($number)
 {
-	//NOTE: There is a CI4 helper function for this purpose using the inflector helper  
+	//NOTE: There is a CI4 helper function for this purpose using the inflector helper
 	$ends = array('th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th');
 	if ((($number % 100) >= 11) && (($number % 100) <= 13)) {
 		$ordninal = 'th';
@@ -1719,7 +1721,7 @@ if (!function_exists('isAssoc')) {
 	 *
 	 * @param	Array $array
 	 * @return	Bool    `True` if value is an Associative Array, `False` otherwise
-	 * 
+	 *
 	 */
 	function isAssoc($array): bool
 	{
