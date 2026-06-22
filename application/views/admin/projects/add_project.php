@@ -64,30 +64,32 @@ echo form_open_multipart('admin_projects/add_project_ajax', 'id="submit"'); ?>
                     <option value="Bwari">Bwari</option>
                     <option value="Guzape">Guzape</option>
                     <option value="Idu">Idu</option>
-                    <option value="Lugbe">Lugbe</option>
-                    <option value="Mbora">Mbora</option>
                     <option value="Kabusa">Kabusa</option>
                     <option value="Karsana">Karsana</option>
                     <option value="Kuje">Kuje</option>
+                    <option value="Lugbe">Lugbe</option>
+                    <option value="Mbora">Mbora</option>
                 </optgroup>
 
                 <!-- Port Harcourt Areas -->
                 <optgroup label="Port Harcourt">
-                    <option value="New GRA">New GRA</option>
-                    <option value="Old GRA">Old GRA</option>
-                    <option value="Diobu">Diobu (Mile 1, 2, 3)</option>
-                    <option value="D-Line">D-Line</option>
-                    <option value="Trans-Amadi">Trans-Amadi</option>
-                    <option value="Choba">Choba</option>
-                    <option value="Rumuola">Rumuola</option>
-                    <option value="Elelenwo">Elelenwo</option>
-                    <option value="Woji">Woji</option>
                     <option value="Ada George">Ada George</option>
                     <option value="Agip">Agip</option>
-                    <option value="Peter Odili Road">Peter Odili Road</option>
-                    <option value="Ogbunabali">Ogbunabali</option>
+                    <option value="Choba">Choba</option>
+                    <option value="D-Line">D-Line</option>
+                    <option value="Diobu">Diobu (Mile 1, 2, 3)</option>
+                    <option value="Elelenwo">Elelenwo</option>
+                    <option value="Igwuruta">Igwuruta</option>
+                    <option value="Igwuruta-Ali">Igwuruta-Ali</option>
                     <option value="Mgbuoba">Mgbuoba</option>
+                    <option value="New GRA">New GRA</option>
+                    <option value="Old GRA">Old GRA</option>
+                    <option value="Ogbunabali">Ogbunabali</option>
+                    <option value="Peter Odili Road">Peter Odili Road</option>
+                    <option value="Rumuola">Rumuola</option>
                     <option value="Rumukrueshi">Rumukrueshi</option>
+                    <option value="Trans-Amadi">Trans-Amadi</option>
+                    <option value="Woji">Woji</option>
                 </optgroup>
             </select>
             <div class="form-error"><?php echo form_error('location'); ?></div>
