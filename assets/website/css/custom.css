@@ -161,3 +161,52 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Project details: keep the thumbnail strip compact and evenly sized. */
+.project-details-gallery .property-thumb-slider .property-slider-img {
+  height: 120px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-details-gallery .property-thumb-slider img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Limit these card adjustments to More Projects on the details page. */
+.project-related-projects .swiper-wrapper {
+  align-items: stretch;
+}
+
+.project-related-projects .swiper-slide {
+  height: auto;
+}
+
+.project-related-projects .property-card4 {
+  height: 100%;
+}
+
+.project-related-projects .property-card-thumb img {
+  display: block;
+  height: 240px !important; /* Override the shared 450px property-cards rule. */
+  object-fit: cover;
+}
+
+.project-related-projects .box-title {
+  min-height: 2.6em;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 575px) {
+  .project-details-gallery .property-thumb-slider .property-slider-img {
+    height: 90px;
+  }
+
+  .project-related-projects .property-card-thumb img {
+    height: 220px !important;
+  }
+}

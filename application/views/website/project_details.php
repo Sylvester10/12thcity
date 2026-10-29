@@ -19,7 +19,7 @@ Project Details Area
 ==============================-->
 <section class="space-top space-extra-bottom">
     <div class="container">
-        <div class="slider-area property-slider1">
+        <div class="slider-area property-slider1 project-details-gallery">
             
             <div class="swiper th-slider mb-4" id="propertySlider" data-slider-options='{"effect":"fade","loop":true,"thumbs":{"swiper":".property-thumb-slider"},"autoplayDisableOnInteraction":"true"}'>
 
@@ -229,7 +229,7 @@ Project Details Area
 <!--==============================
 More Projects Area  
 ==============================-->
-<section class="space bg-theme" id="property-sec">
+<section class="space bg-theme project-related-projects" id="property-sec">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-xxl-6 col-lg-8">
@@ -255,7 +255,7 @@ More Projects Area
                                         <a href="<?php echo base_url('project-details/' . $y->slug); ?>" class="th-btn style4 th-btn-icon"></a>
                                         <div class="property-card-meta">
                                             <div class="meta-wrap">
-                                                <p class="meta-title"><?php echo mb_strimwidth($y->description, 0, 100, '...'); ?></p>
+                                                <p class="meta-title"><?php echo htmlspecialchars(mb_strimwidth(html_entity_decode(strip_tags($y->description), ENT_QUOTES, 'UTF-8'), 0, 100, '...'), ENT_QUOTES, 'UTF-8'); ?></p>
                                             </div>
                                         </div>
                                     </div>
