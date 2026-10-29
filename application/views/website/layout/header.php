@@ -65,7 +65,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/website/css/jquery.datetimepicker.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/website/css/style.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/website/css/custom.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/website/css/custom.css?v=<?= filemtime(FCPATH . 'assets/website/css/custom.css'); ?>">
 
 </head>
 

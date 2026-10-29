@@ -443,10 +443,11 @@ Feature Projects Area
         </div>
     </div>
     <div class="container">
-        <div class="slider-area project-slider5 slider-drag-wrap">
+        <div class="slider-area project-slider5 featured-projects-slider">
             <div
                 class="swiper th-slider"
-                data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"2"},"1500":{"slidesPerView":"3"}},"grabCursor":"true","slideToClickedSlide":"true", "paginationType":"progressbar"}'>
+                aria-label="Featured projects"
+                data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"992":{"slidesPerView":2},"1500":{"slidesPerView":3}},"grabCursor":true,"autoplay":false,"paginationType":"fraction"}'>
                 <div class="swiper-wrapper">
 
                     <?php
@@ -456,9 +457,9 @@ Feature Projects Area
 
                         <div class="swiper-slide">
                             <div class="portfolio-card style5">
-                                <div class="portfolio-img">
-                                    <img src="<?php echo base_url('assets/uploads/projects/' . $y->featured_image); ?>" alt="<?php echo htmlspecialchars($y->title); ?>" />
-                                </div>
+                                <a class="portfolio-img" href="<?php echo base_url('project-details/' . $y->slug); ?>">
+                                    <img src="<?php echo base_url('assets/uploads/projects/' . $y->featured_image); ?>" alt="<?php echo htmlspecialchars($y->title); ?>" width="1600" height="900" loading="lazy" decoding="async" />
+                                </a>
                                 <div class="portfolio-content">
                                     <div class="box-content">
                                         <h3 class="portfolio-title portfolio-title-black">
@@ -485,13 +486,11 @@ Feature Projects Area
                     } ?>
 
                 </div>
-                <!-- scrollbar -->
-                <div class="slider-pagination-progressbar2">
-                    <div class="slider-progressbar-track"></div>
-                    <div class="slider-progressbar-fill"></div>
+                <div class="featured-projects-controls">
+                    <button class="slider-prev" type="button" aria-label="Previous featured project"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                    <div class="slider-pagination" aria-live="polite"></div>
+                    <button class="slider-next" type="button" aria-label="Next featured project"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
                 </div>
-                <div class="slider-pagination"></div>
-                <div class="slider-pagination2"></div>
             </div>
         </div>
     </div>
