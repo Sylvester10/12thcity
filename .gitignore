@@ -1,0 +1,19 @@
+# Ignore system and editor files
+.gitignore
+.git
+.vscode/
+.htaccess
+.DS_Store
+
+# Archives
+*.zip
+
+# Dependencies
+node_modules/
+
+#folder and files
+application/cache
+application/logs
+
+#files
+/index.php
