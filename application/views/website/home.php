@@ -56,8 +56,9 @@ Hero Area
 
     <div class="hero-social-link">
         <div class="social-wrap">
-            <a href="https://www.facebook.com/people/12th-City-Real-Estate/100088929480811/?mibextid=LQQJ4d" target="_blank">FACEBOOK</a>
-            <a href="https://www.instagram.com/12th_city_real_estate" target="_blank">INSTAGRAM</a>
+            <a href="<?= business_facebook ?>" target="_blank">FACEBOOK</a>
+            <a href="<?= business_instagram ?>" target="_blank">INSTAGRAM</a>
+            <a href="<?= business_youtube ?>" target="_blank">YOUTUBE</a>
             <!-- <a href="https://twitter.com/">TWITTER</a> -->
         </div>
     </div>
